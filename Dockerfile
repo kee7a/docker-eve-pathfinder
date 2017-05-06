@@ -8,6 +8,8 @@ ENV php_vars /usr/local/etc/php/conf.d/docker-vars.ini
 
 ENV NGINX_VERSION 1.12.0
 
+ENV GIT_REPO https://github.com/exodus4d/pathfinder.git
+
 RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
   && CONFIG="\
     --prefix=/etc/nginx \
